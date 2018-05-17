@@ -109,23 +109,24 @@
                 <br>
                 (41) 9999-9000
               </p>
-              <p class="address mb-5">
-                <em>
-                  <strong>Tarumã, Curitiba - PR</strong>
-                  <br>
-                  81020-430
-                </em>
-              </p>
             </div>
             
             <div class="bg-faded p-5 rounded">
+              
+              <p class="address mb-5">
+                <em>
+                  <strong>Jockey Plaza</strong>
+                  <br>
+                  Tarumã, Curitiba - PR
+                </em>
+              </p>
               
               <div id="map"></div>
                 <script>
                   function initMap() {
                     var uluru = {lat: -25.4286429, lng: -49.2150295};
                     var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 20,
+                      zoom: 25,
                       center: uluru
                     });
                     var marker = new google.maps.Marker({
