@@ -112,17 +112,15 @@
             </div>
             
             <div class="bg-faded p-5 rounded">
-              
-              <p class="address mb-5">
-                  <strong>Jockey Plaza</strong> Tarumã, Curitiba - PR
-              </p>
-              
+
+               <strong>Jockey Plaza</strong> Tarumã, Curitiba - PR
+
               <div id="map"></div>
                 <script>
                   function initMap() {
                     var uluru = {lat: -25.4286429, lng: -49.2150295};
                     var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 14,
+                      zoom: 12,
                       center: uluru
                     });
                     var marker = new google.maps.Marker({
