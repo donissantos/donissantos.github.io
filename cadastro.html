@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-  <head>
-    <style>
-      #map {
-        height: 500px;
-        width: 100%;
-       }
-    </style>  
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -33,7 +25,7 @@
       <span class="site-heading-lower">Aroma Coolritibano</span>
     </h1>
 
-    <!-- NavegaÁ„o -->
+    <!-- Navega√ß√£o -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Aroma Coolritibano</a>
@@ -56,6 +48,11 @@
                 <span class="sr-only">(current)</span>  
               </a>
             </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="https://donissantos.github.io/cadastro.html">Contato
+                <span class="sr-only">(current)</span>  
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -67,95 +64,41 @@
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner text-center rounded">
               <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Venham Conferir</span>
-                <span class="section-heading-lower">Estamos abertos</span>
+                <span class="section-heading-upper">Tem alguma Duvida?</span>
+                <span class="section-heading-lower">Fale Conosco</span>
               </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Domingo
-                  <span class="ml-auto">Fechado</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Segunda
-                  <time class="ml-auto">7:00 ·s 20:00</time>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  TerÁa
-                  <span class="ml-auto">7:00 ·s 20:00</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Quarta
-                  <span class="ml-auto">7:00 ·s 20:00</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Quinta
-                  <span class="ml-auto">7:00 ·s 20:00</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Sexta
-                  <span class="ml-auto">7:00 ·s 20:00</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Sab·do
-                  <span class="ml-auto">9:00 ·s 17:00</span>
-                </li>
-              </ul>
-              <p class="mb-0">
-                <small>
-                  <em>Ligar a qualquer momento</em>
-                </small>
-                <br>
-                (41) 9999-9000
-              </p>
-              <p class="mb-5">
-                <strong>Jockey Plaza</strong> - Tarum„, Curitiba - PR
-                <br>
-              </p>
-              <!-- Script API do Google Maps -->
-              <div id="map"></div>
-                <script>
-                  function initMap() {
-                    var uluru = {lat: -25.4286429, lng: -49.2150295};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 11,
-                      center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                      position: uluru,
-                      map: map
-                    });
-                  }
-                </script>
-                  <script async defer
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQN8maKTQH0APDC51qZAxPNfLxA8zjKzU&callback=initMap">
-                </script>
-              </div>
+              <p>Atraves desse formulario voc√™ poder√° entrar em contato conosco, nossa equipe ir√° te retornar em breve.</p>
             </div>
+            <form name="form01">
+              <div class="form-group">
+                <label>Nome</label>
+                <input name= "nome" type="text" class="form-control" id="nome" placeholder="Informe seu Nome:">
+              </div>
+              <div>
+                <label>E-mail</label>
+                <input name= "email" type="text" class="form-control" id="email" placeholder="E-mail:">
+              </div></br>
+              <div>
+                <label>Telefone</label>
+                <input name= "telefone" type="numeric" class="form-control" id="valor" placeholder="Telefone:">
+              </div></br>
+              <div>
+                <label>Endere√ßo</label>
+                <input name= "mensagem" type="text" class="form-control" id="mensagem" placeholder="Digite aqui sua mensagem:">
+              </div></br>
+              <div>
+                <a name="Enviar" value="enviar" type="input" class="btn btn-outline-primary" href="https://donissantos.github.io/mensagem.html">Cadastrar</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
-    <footer class="footer text-faded text-center py-5">
-      <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
-        <iframe src ="http://www.dnip.com.br/flash/flowplayer/index.php?dnipf=wz2.dnip.com.br&canal=classfm&canal2=classfm&wowza=0" width="250" marginwidth="0" height="30" marginheight="0" scrolling="no" frameborder="0">
-          <p>Seu navegador n„o suporta iframes.</p>
-        </iframe>
-      </div>
-      
-    </footer>
-  
 
     <!-- Links do Bootstrap e do JavaScript -->
     <script src="https://donissantos.github.io/vendor/jquery/jquery.min.js"></script>
     <script src="https://donissantos.github.io/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
-
-  <!-- Script para atualizar a cor na lista de dias - dia atual -->
-  <script>
-    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-  </script>
 
 </html>
