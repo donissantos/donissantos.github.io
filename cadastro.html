@@ -68,6 +68,7 @@
                 <span class="section-heading-lower">Fale Conosco</span>
               </h2>
               <p>Atraves desse formulario você poderá entrar em contato conosco, nossa equipe irá te retornar em breve.</p>
+              <form action="envia_fale.php" method="post" name="form">
               <div>
                 <p>Nome</p>
                 <input name= "nome" type="text" class="form-control" id="nome" placeholder="Informe seu Nome:">
@@ -78,15 +79,16 @@
               </div></br>
               <div>
                 <p>Telefone</p>
-                <input name= "telefone" type="numeric" class="form-control" id="valor" placeholder="Telefone:">
+                <input name= "assunto" type="numeric" class="form-control" id="valor" placeholder="Telefone:">
               </div></br>
               <div>
                 <p>Mensagem:</p>
                 <input name= "mensagem" type="text" class="form-control" id="mensagem" placeholder="Digite aqui sua mensagem:">
               </div></br>
               <div class="intro-button mx-auto">
-                <a class="btn btn-primary btn-xl" href="https://donissantos.github.io/mensagem.html">Enviar</a>
+                <input type="submit" name="submit" value="Enviar" class="btn btn-primary btn-xl"><br>
               </div>
+              </form>
             </div>
           </div>
         </div>
